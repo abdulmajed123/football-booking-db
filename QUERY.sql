@@ -12,9 +12,10 @@ CREATE TABLE Matches (
     match_id INT PRIMARY KEY,
     fixture VARCHAR(150),
     tournament_category VARCHAR(100),
-    base_ticket_price DECIMAL(10,2),
+    base_ticket_price INT,
     match_status VARCHAR(50)
 );
+
 
 -- ৩. Bookings 
 CREATE TABLE Bookings (
@@ -23,7 +24,7 @@ CREATE TABLE Bookings (
     match_id INT REFERENCES Matches(match_id),
     seat_number VARCHAR(20),
     payment_status VARCHAR(50),
-    total_cost DECIMAL(10,2)
+    total_cost INT
 );
 
 
