@@ -57,11 +57,6 @@ The system is built around three core entities:
 | `payment_status` | VARCHAR(50) | -           | Financial status of booking    |
 | `total_cost`     | INT         | -           | Final invoice price            |
 
----
+```
 
-## 💻 How to Run the SQL Scripts
-
-1. Clone this repository to your local system:
-   ```bash
-   git clone [https://github.com/abdulmajed123/football-booking-db](https://github.com/abdulmajed123/football-booking-db)
-   ```
+```
